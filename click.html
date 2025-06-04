@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Клік зареєстровано</title>
+  <script>
+    fetch("https://discord.com/api/webhooks/1379754575317303396/yS3UKEMqtm_lwGIxv6c452GwLfecrZb7YrsLUFacdDK-EpLhl-ulJn0EoKDUDDZ2A78i", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        content: "🔔 Хтось натиснув на посилання!"
+      })
+    });
+  </script>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .message {
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="message">
+    <h1>✅ Дякуємо!</h1>
+    <p>Ваш клік зафіксовано.</p>
+  </div>
+</body>
+</html>
